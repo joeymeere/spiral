@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spiral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              array: ['"Array"', "monospace"],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+ 
+      @font-face {
+        font-family: Array;
+        src: url("fonts/Array-Bold.otf") format("opentype");
+      }
+    </style>
+  </head>
+  <body class="bg-[#000047]">
+    <nav class="sticky top-0 w-full pt-6 pb-2 px-4 mb-8 bg-[#000047] border border-b-[#00006B] border-t-transparent border-l-transparent border-r-transparent">
+      <div class="flex gap-x-8">
+        <div class="flex gap-x-2">
+          <svg class="text-white w-8 h-8 transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M21 3v18H3V3h18zM5 19h14V5H5v14zm12-8v2h-6v2H9v-2H7v-2h2V9h2v2h6zm-4-2h-2V7h2v2zm0 8v-2h-2v2h2z" fill="currentColor"/></svg>
+          <svg class="text-white w-8 h-8 transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M3 21V3h18v18H3zM19 5H5v14h14V5zM7 13v-2h6V9h2v2h2v2h-2v2h-2v-2H7zm4 2h2v2h-2v-2zm0-8v2h2V7h-2z" fill="currentColor"/></svg>
+        </div>
+        <div class="flex gap-x-6">
+          <p class="font-array tracking-wide text-white text-2xl transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101">Explore</p>
+          <p class="font-array tracking-wide text-white text-2xl transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101">My Games</p>
+          <p class="font-array tracking-wide text-white text-2xl transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101">Groups</p>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="p-8 min-w-[1000px]">
+        <div class="mx-auto grid grid-cols-4 gap-x-4 justify-center">
+          <div>
+            <div class="max-w-sm border border-gray-200 rounded-lg shadow bg-[#000047]/50 dark:border-[#ff1efe]">
+              <a href="#">
+                  <img class="rounded-t-lg" src="https://i.imgur.com/K7otSQ0.jpg" alt="" />
+              </a>
+              <div class="p-5">
+                  <a href="#">
+                      <h5 class="mb-4 text-2xl font-array font-bold tracking-tight text-gray-900 dark:text-white">Awesome Game</h5>
+                  </a>
+                  <a href="#" class="transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101 inline-flex items-center px-3 py-2 text-sm font-array font-medium text-center text-white bg-[#ff1efe] rounded-lg">
+                      View
+                      <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="max-w-sm border border-gray-200 rounded-lg shadow bg-[#000047]/50 dark:border-[#ff1efe]">
+              <a href="#">
+                  <img class="rounded-t-lg" src="https://i.imgur.com/K7otSQ0.jpg" alt="" />
+              </a>
+              <div class="p-5">
+                  <a href="#">
+                      <h5 class="mb-4 text-2xl font-array font-bold tracking-tight text-gray-900 dark:text-white">Awesome Game</h5>
+                  </a>
+                  <a href="#" class="transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101 inline-flex items-center px-3 py-2 text-sm font-array font-medium text-center text-white bg-[#ff1efe] rounded-lg">
+                      View
+                      <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="max-w-sm border border-gray-200 rounded-lg shadow bg-[#000047]/50 dark:border-[#ff1efe]">
+              <a href="#">
+                  <img class="rounded-t-lg" src="https://i.imgur.com/K7otSQ0.jpg" alt="" />
+              </a>
+              <div class="p-5">
+                  <a href="#">
+                      <h5 class="mb-4 text-2xl font-array font-bold tracking-tight text-gray-900 dark:text-white">Awesome Game</h5>
+                  </a>
+                  <a href="#" class="transition ease-in-out delay-110 hover:-translate-y-1 hover:scale-101 inline-flex items-center px-3 py-2 text-sm font-array font-medium text-center text-white bg-[#ff1efe] rounded-lg">
+                      View
+                      <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
